@@ -1,3 +1,14 @@
-f_name = str(input("Input the file name :"))
-f_ext = f_name.split(".")
-print("The extension is python : " + (f_ext[-1]) )
+li = ['py','java','jpeg','mp3']
+def ext(x):
+    if(x == li[0]):
+        print("python")
+    if(x == li[1]):
+        print("java")
+    if(x == li[2]):
+        print("image")
+    if(x == li[3]):
+        print("audio")
+
+i = input("File name :")
+f = i.split(".")
+print("The extension of the file:" + ext(f[-1]))
